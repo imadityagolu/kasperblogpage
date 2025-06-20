@@ -1,0 +1,198 @@
+/* service double tone effect */
+.service-index {
+    margin: 2rem 0;
+    color: rgb(44, 42, 42);
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+.service-index .service-index-bouble {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    top: -10px;
+    font-size: 2rem;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(42, 116, 129, 0.264);
+}
+#careerForm {
+    box-shadow: -4px 4px 5px rgb(170, 168, 168);
+    width: 100%;
+    background-color: rgba(9, 122, 70, 0.651);
+    backdrop-filter: blur(20px);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+#careerForm h4 {
+    text-shadow: -3px 3px 5px rgb(131, 118, 118);
+}
+
+.form-group {
+    margin-bottom:10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 1rem !important;
+    font-weight: 400;
+    color: white;
+
+}
+input[type="text"], input[type="email"]  {
+    padding: .2rem .5rem !important;
+}
+input[type="text"],
+input[type="email"],
+button,
+input[type="file"] {
+    width: 100%;
+    padding:3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem !important;
+    font-weight: 400;
+}
+input[type="file"] {
+    margin-top: .5rem;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 30px;
+    border: none !important;
+}
+select{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem !important;
+    font-weight: 400;
+}
+
+.carrersubmitBtn {
+    background-color: #ff5e00e5;
+    color: #fff !important;
+    border: none !important;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: .3rem;
+    cursor: pointer;
+    transition: .8s ease;
+    outline: none !important;
+}
+.carrersubmitBtn:hover {
+    background-color: #f1e5d5;
+    color: #ff5e00e5 !important;
+}
+.Internship-list {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr) );
+    row-gap: 1rem; column-gap: 1rem;
+    padding: 1rem;
+}
+.Internship-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: -4px 4px 5px rgba(216, 204, 204, 0.658);
+    background:white;
+}
+.btn-pointer {
+    background:linear-gradient(165deg, rgb(4, 82, 62), rgb(7, 121, 92), rgb(8, 167, 127));
+    border-radius: 30px 0 0px 30px !important;
+    border:none;
+    color: white !important;
+    font-weight: 600 !important;
+}
+.btn-pointer:hover {
+    background:linear-gradient(165deg,rgb(8, 167, 127), rgb(7, 121, 92),  rgb(4, 82, 62));
+    border-radius: 30px 0 0px 30px;
+}
+.form-left {
+    flex: 1;
+    background-color: rgba(230, 222, 222, 0.418);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: -4px 4px 8px rgba(216, 210, 210, 0.603);
+}
+.form-left iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* Why US Section */
+.why-header {
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(240, 233, 233, 0.63);
+    padding: 2rem 0;
+}
+.blob-circle-1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 0%;
+    rotate: 45deg;
+    background:linear-gradient(165deg, rgb(5, 87, 69) 10%, rgb(7, 150, 138), rgb(255, 94, 2), rgb(255, 135, 37));
+    box-shadow: -10px 10px 5px  rgba(44, 238, 228, 0.466);
+    opacity: 20%;
+    z-index: -1;
+    left: -10%;
+}
+.blob-circle-2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:linear-gradient(165deg, rgb(5, 87, 69) 10%, rgb(7, 150, 138), rgb(255, 94, 2), rgb(255, 135, 37));
+    box-shadow: -10px 10px 5px  rgba(44, 238, 228, 0.466);
+    opacity: 60%;
+    right: 0;
+    z-index: -1;
+}
+.blob-circle-3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background:linear-gradient(165deg, rgb(5, 87, 69) 10%, rgb(7, 150, 138), rgb(255, 94, 2), rgb(255, 135, 37));
+    box-shadow: -10px 10px 5px  rgba(44, 238, 228, 0.466);
+    opacity: 40%;
+    right: 10%;
+    bottom: -35%;
+    z-index: -1;
+}
+.career-content-why {
+    position: relative;
+    flex: 1;       
+}
+.career-content-why li {
+    text-shadow: -3px 3px 5px gray;  
+    font-weight: 600;     
+}
+.career-content-why h3 {
+    width: 100%;
+    text-align: center;
+}
+.career-why-img {
+    padding: 1rem;
+    width: 500px;
+    height: 400px;
+}
+.career-why-img img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(-4px 4px 5px rgba(201, 190, 190, 0.445));
+}
+
+@media screen and (max-width:400px) {
+    #careerForm {
+        padding: .5rem 1rem;
+    }
+}

@@ -1,0 +1,149 @@
+/* Container and layout */
+.category-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px 15px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(241, 235, 235);
+}
+@media(max-width:850px){
+    .category-container {
+        margin-left: 12px;
+}
+}
+
+/* Not logged in message */
+.cat-logged-in {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Form styles */
+.category-form {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.categoryform-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  background-color: #88b7e9;
+padding: 12px;
+}
+
+.categoryform-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.categoryform-input {
+  width: 100%;
+  padding: 8px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.categoryform-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4083ca;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.categoryform-button:hover {
+  background-color: #0056b3;
+}
+
+/* Category list container */
+.category-list {
+  margin-top: 2rem;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+/* List title */
+.catlist-title {
+  margin: 14px 0 1rem 0;
+    padding: 3.5px 17px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+/* No categories text */
+.no-categories {
+  color: #666;
+  font-style: italic;
+}
+
+/* Single category item */
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Category title */
+.category-title {
+  font-weight: 500;
+}
+
+/* Actions buttons container */
+.category-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Edit button */
+.catbtn-edit {
+  background-color: #198754;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.catbtn-edit:hover {
+  background-color: #146c43;
+}
+
+/* Delete button */
+.catbtn-delete {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.catbtn-delete:hover {
+  background-color: #b02a37;
+}

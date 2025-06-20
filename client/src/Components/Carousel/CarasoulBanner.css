@@ -1,0 +1,98 @@
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    border-radius: 50%;
+    border: 5px solid rgb(236, 76, 13);
+    background-color: rgb(236, 76, 13);
+    z-index: 0;
+}
+.carasoul {
+    box-shadow: 0 5px 8px rgb(233, 231, 231);
+    background: url(../../Assets/Images/Home/POPBGHOME.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+}
+.carasoul h1 {
+    /* text-shadow: -3px 3px 5px rgb(128, 128, 128); */
+    text-align: start;
+    font-size: 4rem !important;
+}
+
+@media screen and (max-width:579px) {
+    .carasoul h1 {
+        text-align: center;
+        font-size: 2.3rem !important;
+    }
+    .ctabuttons {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1048px) {
+    .carasoul h1 {
+        font-size: 3rem !important;
+    }
+}
+.carasoul h2 {
+    /* text-shadow: -3px 3px 5px rgb(128, 128, 128); */
+    color:white !important
+}
+.nav-link {
+    color:rgb(12, 99, 77) !important;
+}
+.nav-link:hover {
+    color:rgb(245, 72, 20) !important;
+}
+.active {
+    font-weight: 900 !important;
+}
+.carasoul img {
+    padding: 2rem;
+    width: 100%;
+    z-index: 1;
+}
+.banner-container {
+    height: 450px;
+    position: relative;
+}
+.blob1 {
+    position: absolute;
+    top: -1%;
+    left: -10%;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: linear-gradient(165deg, rgba(221, 207, 12, 1), rgba(255, 0, 0, 0.615));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset, -5px 3px 4px rgba(255, 253, 253, 0.774) inset, -8px -10px 4px rgba(255, 253, 253, 0.493) inset;
+}
+.blob2 {
+    position: absolute;
+    bottom: -0%;
+    z-index: -1;
+    left: -10%;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(115deg, rgb(204, 115, 245), rgba(0, 255, 76, 0.315));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.774) inset;
+}
+.blob3 {
+    position: absolute;
+    bottom: -60%;
+    right: -10%;
+    z-index: 3;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(125deg, rgb(12, 103, 221), rgba(0, 255, 76, 0.315));
+    box-shadow: 5px 3px 15px rgba(255, 253, 253, 0.37) inset, -5px 3px 4px rgba(255, 253, 253, 0.34) inset, -8px -10px 4px rgba(255, 253, 253, 0.343) inset;
+}
+.Carousel-Item {
+    width: 95%;
+    margin: auto;
+}

@@ -1,0 +1,299 @@
+/* Fonts Imports */
+/* @font-face {
+  font-family:Poppins ;
+  src: url(./Assets/Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family:Roboto ;
+  src: url(./Assets/Fonts/Roboto-Regular.ttf);
+} */
+
+/* Default Configrations */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Roboto", serif;
+}
+body {
+  background-color: white;
+}
+:root {
+  --Primary-dark: #0f6060;
+  --Primary-light: #10a0a0;
+  --Secondary-Dark: #cc6b19;
+  --Secondary-Light: #ee7a1a;
+  --bg-Color: rgb(208, 243, 252);
+  --dark-blacl: black;
+  --Font-Color: gray;
+  --box-shadow: -3px 5px 3px rgba(88, 82, 82, 0.199),
+    3px 5px 3px rgba(88, 82, 82, 0.199);
+  --text-shadow: -2px 2px 2px rgba(51, 49, 49, 0.705);
+}
+
+.proplist li {
+  text-align: start !important;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 10px;
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #0059df;
+}
+p {
+  font-size: 0.8rem !important;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+h6 {
+  font-size: 1.2rem !important;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+h5 {
+  font-size: 1.5rem !important;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+h4 {
+  font-size: 1.3rem !important;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+h3 {
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+h2 {
+  font-weight: 600;
+  line-height: 3rem;
+}
+h1 {
+  font-size: 3.5rem !important;
+  font-weight: 800;
+  line-height: 3.6rem;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+.aline-center {
+  align-items: center;
+}
+.aline-start {
+  align-items: start;
+}
+.btn-primary {
+  background-color: rgb(255, 75, 4);
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 1px rgb(92, 88, 88);
+  transition: 0.2s;
+}
+.btn-primary:hover {
+  background-color: rgb(209, 73, 19);
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 1px rgb(20, 20, 20);
+}
+.btn-secondary {
+  font-weight: bold;
+  background-color: rgb(23, 117, 94);
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px 1px rgb(92, 88, 88);
+  transition: 0.2s;
+}
+.btn-secondary:hover {
+  background-color: rgb(13, 66, 52);
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 1px rgb(20, 20, 20);
+}
+.btn-quote {
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bold;
+  color: var(--Primary-dark);
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .navbar-collapse {
+    min-height: 100vh !important;
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+.aline-center {
+  align-items: center;
+}
+.aline-start {
+  align-items: flex-start;
+}
+
+/* Call Button - Bottom Left */
+.call-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #34b7f1;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.call-button:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.call-button:hover {
+  transform: scale(1.1);
+}
+
+/* WhatsApp Button - Bottom Right */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-60%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    width: 65px;
+    height: 65px;
+    font-size: 50px;
+  }
+  .call-button {
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
+  }
+
+  .call-button {
+    left: 15px;
+  }
+
+  .whatsapp-button {
+    right: 15px;
+  }
+}
+
+/* blog section */
+
+.avatar.avatar-xs {
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 0.65rem;
+}
+.page-wrapper .content {
+  padding: 24px;
+  padding-bottom: 24px;
+  padding-bottom: 0;
+  min-height: calc(100vh - 105px);
+}
+
+.text-truncate {
+  white-space:
+normal;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient:
+vertical;
+  display: -webkit-box;
+}
+/* .dropdown .dropdown-toggle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+} */
+/* .input-icon-end .form-control {
+  padding-right: 32px;
+}
+.dropdown-menu {
+  border-color: #e5e7eb;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  color: #111827;
+  background-color: #fff;
+  padding: 0;
+  z-index: 10;
+} */

@@ -1,0 +1,158 @@
+.users-section-container {
+  padding: 3rem;
+  background-color: var(--section-color);
+  color: var(--label-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.usersection-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.usersearch-bar {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.userpage-action{
+ text-align: center!important;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.users-table-heading {
+  background-color: #1976D2;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.users-table-body{
+  margin-top: 8px;
+}
+
+.users-table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.users-table-data,
+.users-table-heading {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.useredit-btn2,
+.userdelete-btn2,
+.useredit-modal-update-btn,
+.useredit-modal-cancel-btn {
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.useredit-btn2 {
+   background: none;
+  border: none;
+  color: green;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.useredit-btn2:hover {
+  color: rgb(1, 17, 1);
+}
+
+/* Delete Button - Red Text/Icon with No Background */
+.userdelete-btn2 {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.userdelete-btn2:hover {
+  color: darkred;
+}
+
+.useredit-modal-update-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.useredit-modal-cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.useredit-btn2:hover {
+  background-color: rgb(20, 181, 20);
+}
+
+.userdelete-btn2:hover {
+  background-color: #e83d4e;
+}
+
+.useredit-modal-update-btn:hover {
+  background-color: #218838;
+}
+
+.useredit-modal-cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+.useredit-role-dropdown {
+  padding: 6px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.userpagination {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;justify-content: center;align-content: center;
+}
+
+.userpage-btn {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #333;
+  width: auto;
+}
+
+.userpage-btn:hover {
+  background-color: #eee;
+}
+
+.userpage-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  
+}

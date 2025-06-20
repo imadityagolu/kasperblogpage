@@ -1,0 +1,39 @@
+.comment-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sort-share {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .sort-share .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-share .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .signup-form {
+    margin-top: 40px;
+  }
+  
