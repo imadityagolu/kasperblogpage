@@ -12,7 +12,7 @@ import CategoryIcon from "@mui/icons-material/Category";
 import CreateIcon from "@mui/icons-material/Create";
 
 const iconNavItems = [
-  { icon: <HomeIcon />, path: "/Blog_pagination", key: "home" },
+  { icon: <HomeIcon />, path: "/blogpage", key: "home" },
   { icon: <PersonIcon />, path: "/adminsidebar/profile", key: "profile" },
   { icon: <ArticleIcon />, path: "/adminsidebar/blogs", key: "blogs" },
   { icon: <FeaturedPlayListIcon />, path: "/adminsidebar/my-blogs", key: "my-blogs" },

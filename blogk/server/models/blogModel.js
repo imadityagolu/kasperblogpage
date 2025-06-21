@@ -45,8 +45,7 @@ const blogSchema= new mongoose.Schema({
     },
     thumbnail:{
         type:[String],
-        required:[true,'thumbnail is required'],
-    default:[],
+        default:[],
     },
     // postimages:{
     //     type:[String],// Array of post image file paths

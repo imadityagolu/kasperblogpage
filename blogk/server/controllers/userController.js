@@ -163,26 +163,25 @@ return res.status(500).send({
 exports.getProfileController = async (req,res)=>{
     try{
         const userId=req.params.id;
-const user= await userModel.findById(userId).select("-password"); 
+        const user= await userModel.findById(userId).select("-password"); 
 
-if(!user){
-    return res.status(404).send({
-        succes:false,
-        message:"user not found"
-    })
-}
+        if(!user){
+            return res.status(404).send({
+                success:false,
+                message:"User not found"
+            })
+        }
 
-return res.status(200).send({
-success:true,
-user
-
-    });
-}catch(error){
-    //console.error("Error fetching user data", error);
-    return res.status(500).send({
-      success: false,
-      message: "Error fetching user data",
-      error: error.message,
-    });
-  }
+        return res.status(200).send({
+            success:true,
+            user
+        });
+    }catch(error){
+        console.error("Error fetching user data", error);
+        return res.status(500).send({
+            success: false,
+            message: "Error fetching user data",
+            error: error.message,
+        });
+    }
 };

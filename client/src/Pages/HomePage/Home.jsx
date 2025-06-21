@@ -40,7 +40,7 @@ import { Helmet } from "react-helmet";
 import Call from "./callbutton/call";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import Blog_pagination from "../../Components/Blogs/Blog/Blog_pagination";
+import BlogPagination from "../../Components/Blogs/Blog/BlogPagination";
 import BlogHome from "../../Components/Blogs/BlogHome/BlogHome";
 const Home = () => {
  

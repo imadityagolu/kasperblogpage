@@ -12,6 +12,7 @@ const upload = require("../middlewares/multer");
 const checkIsUserAuthenticated = require("../middlewares/authMiddleware");
 const { admin } = require("../middlewares/roleMiddleware");
 const { deleteUser } = require("../controllers/adminController");
+const { validateRegistration, validateLogin } = require("../middlewares/validationMiddleware");
 
 //router object
 const router = express.Router(); //call router from express only we get
@@ -22,10 +23,10 @@ const router = express.Router(); //call router from express only we get
 router.get("/all-users", getAllUsers);
 
 //create user || POST
-router.post("/register", upload.single("profile"), registerController);
+router.post("/register", upload.single("profile"), validateRegistration, registerController);
 
 //Login || POST
-router.post("/login", loginController);
+router.post("/login", validateLogin, loginController);
 
 //update||put
 router.put(
@@ -42,6 +43,5 @@ router.delete("/users/:id", checkIsUserAuthenticated, admin, deleteUser);
 
 //role change
 router.put("/role/:id", checkIsUserAuthenticated, admin, updateUserRole);
-
 
 module.exports = router;

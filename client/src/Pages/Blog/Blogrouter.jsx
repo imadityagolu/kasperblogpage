@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "../../Components/Blogs/navbar/Navbar";
 
-import Blog_pagination from "../../Components/Blogs/Blog/Blog_pagination";
+import BlogPagination from "../../Components/Blogs/Blog/BlogPagination";
 import BlogPost from "../../Components/Blogs/blogpost/Blogpost";
 import Login from "../BlogPages/Login";
 import Register from "../BlogPages/Register";
@@ -39,7 +39,7 @@ const BlogRouter = () => {
           <Navbar />
           {/* <Breadcumb_section /> */}
 
-          <Blog_pagination />
+          <BlogPagination />
           {/* <Footer /> */}
         </>
       ),

@@ -34,7 +34,10 @@ const checkIsUserAuthenticated= async(req,res,next) => {
             //console.log("Authenticated user:", req.user);
               if (!user) {
             // if (!req.user) {
-                return res.status(401).json({ message: "Unauthorized User:User not found" });
+                return res.status(401).json({ 
+                    success: false,
+                    message: "Unauthorized: User not found" 
+                });
             }
     req.user = user;
             next();  

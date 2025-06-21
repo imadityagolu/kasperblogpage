@@ -12,7 +12,7 @@ import BASE_URL from "../../../Pages/Config/config";
 import { Container, Form, Row, Col } from "react-bootstrap";
 import ServiceMainSection from "../../SubComponents/ServiceComponents/ServiceSubComponents/ServiceMainSection";
 
-const Blog_pagination = () => {
+const BlogPagination = () => {
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 8;
@@ -149,4 +149,4 @@ const Blog_pagination = () => {
   );
 };
 
-export default Blog_pagination;
+export default BlogPagination;
